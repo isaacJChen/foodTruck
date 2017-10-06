@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Demo</title>
+
+    <!-- TODO: add link to normalize.css on CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- TODO: add link to index.css in the css subdirectory -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- TODO: add page icon -->
+    <link rel="icon" href="img/page-icon.png">
+</head>
+<body>
+  <nav>
+    <h2>Search</h2>
+    <h2>My profile</h2>
+    <h2>Settings</h2>
+    <h2>Other func</h2>
+    <h2>Other func</h2>
+    <h2>Other func</h2>
+    <h2>Other func</h2>
+  </nav>
+
+    <header>
+        <div class="container">
+          <div>
+            <button>
+              <svg fill="#000000" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="page-title">
+            <h1>Cuisine</h1>
+            <p class="lead">Multi-column layout</p>
+          </div>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <a class="butt" href="https://www.google.com/maps/">test working button</a>
+            <div class="col">Chinese food</div>
+            <div class="col">Jpanaese food</div>
+            <div class="col">Mexican food</div>
+            <div class="col">Indian food</div>
+            <div class="col">French food</div>
+            <div class="col">Italian food</div>
+        </div>
+    </main>
+
+    <script>
+      document.querySelector("header button").addEventListener("click", function(){
+        document.body.classList.toggle("drawer-open");
+      })
+    </script>
+
+</body>
+</html>
